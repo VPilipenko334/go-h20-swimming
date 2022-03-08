@@ -15,8 +15,8 @@ const App = () => (
 
     <div className="outer-container">
         <div className="inner-container">
-            hello
-            <Route exact path="/" component={home_page} />
+            <h1>hello</h1>
+            <Route exact path="/" component={home_page}/>
         </div>
     </div>
 

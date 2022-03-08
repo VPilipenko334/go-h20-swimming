@@ -168,7 +168,7 @@ var App = function App() {
     className: "outer-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "inner-container"
-  }, "hello", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "hello"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
     exact: true,
     path: "/",
     component: _home_page_home_page__WEBPACK_IMPORTED_MODULE_3__["default"]
@@ -477,8 +477,8 @@ var configureStore = function configureStore() {
 // const mapStateToProps = state => (
 //     { loggedIn: Boolean(state.session.id) }
 // );
-// // export const AuthRoute = withRouter(connect(mapStateToProps)(Auth));
-// // export const ProtectedRoute = withRouter(connect(mapStateToProps)(Protected));
+// export const AuthRoute = withRouter(connect(mapStateToProps)(Auth));
+// export const ProtectedRoute = withRouter(connect(mapStateToProps)(Protected));
 
 /***/ }),
 
@@ -36943,9 +36943,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store/store */ "./frontend/store/store.js");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//React
 
- //Components
 
 
 
