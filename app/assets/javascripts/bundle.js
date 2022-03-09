@@ -36948,6 +36948,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 document.addEventListener('DOMContentLoaded', function () {
+  // console.log('hello')
   var store;
 
   if (window.currentUser) {
