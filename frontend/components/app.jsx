@@ -9,15 +9,12 @@ import {
 } from 'react-router-dom';
 
 import { ProtectedRoute, AuthRoute } from '../util/route_util';
-import home_page from './home_page/home_page'
+import Home_page from './home_page/Home_page'
 
 const App = () => (
     <div className="outer-container">
-        hello 
         <div className="inner-container">
-            <h1>hello</h1>
-            
-            {/* <Route exact path="/" component={home_page}/> */}
+            <Home_page /> 
         </div>
     </div>
 
