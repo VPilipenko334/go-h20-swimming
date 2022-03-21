@@ -14,8 +14,15 @@ const SessionForm = () => {
         setPassword(event.target.value)
     }
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert(`Welcome' + ${username}`)
+
+    }
+
     return (
         <div className='outer-login-container'>
+            <i class="fa-solid fa-water-ladder"></i>
             <form className="login-form ">
                 Username:
                 <input
@@ -38,6 +45,11 @@ const SessionForm = () => {
                 className="submit-button"
                 // OnClick={handleSubmit}
                 >Log In</button>
+
+                <button 
+                className="sign-up-button">
+                    Sign Up
+                </button>
             </form>
         </div> 
     )

@@ -195,7 +195,7 @@ __webpack_require__.r(__webpack_exports__);
     className: "home-page-outer-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "home-page-inner-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "This will be the homepage"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "hello smoll text")));
+  }));
 });
 
 /***/ }),
@@ -280,9 +280,16 @@ var SessionForm = function SessionForm() {
     setPassword(event.target.value);
   };
 
+  var handleSubmit = function handleSubmit(event) {
+    event.preventDefault();
+    alert("Welcome' + ".concat(username));
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "outer-login-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+    "class": "fa-solid fa-water-ladder"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
     className: "login-form "
   }, "Username:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "text",
@@ -297,7 +304,9 @@ var SessionForm = function SessionForm() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "submit-button" // OnClick={handleSubmit}
 
-  }, "Log In")));
+  }, "Log In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    className: "sign-up-button"
+  }, "Sign Up")));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SessionForm);
