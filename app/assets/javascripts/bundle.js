@@ -270,14 +270,7 @@ var SessionForm = function SessionForm() {
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
       _useState4 = _slicedToArray(_useState3, 2),
       password = _useState4[0],
-      setPassword = _useState4[1]; // update = (field) => {
-  //     return e => setUsername({
-  //         [field]: e.target.value
-  //     });
-  // }
-  // handleSubmit = () => {
-  // }
-
+      setPassword = _useState4[1];
 
   var handleUsernameChange = function handleUsernameChange(event) {
     setUsername(event.target.value);

@@ -6,16 +6,6 @@ const SessionForm = () => {
     const [password, setPassword] = useState('');
 
 
-    // update = (field) => {
-    //     return e => setUsername({
-    //         [field]: e.target.value
-    //     });
-    // }
-
-    // handleSubmit = () => {
-        
-    // }
-
     const handleUsernameChange = (event) => {
         setUsername(event.target.value)
     }
