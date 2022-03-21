@@ -20,6 +20,10 @@ const SessionForm = () => {
         setUsername(event.target.value)
     }
 
+    const handlePasswordChange = (event) => {
+        setPassword(event.target.value)
+    }
+
     return (
         <div className='outer-login-container'>
             <form className="login-form ">
@@ -34,7 +38,9 @@ const SessionForm = () => {
                 Password:
                 <input
                 type="password"
-                className="password"/>
+                className="password"
+                value={password}
+                onChange={handlePasswordChange}/>
 
                 <br/>
 

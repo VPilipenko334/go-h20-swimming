@@ -283,6 +283,10 @@ var SessionForm = function SessionForm() {
     setUsername(event.target.value);
   };
 
+  var handlePasswordChange = function handlePasswordChange(event) {
+    setPassword(event.target.value);
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "outer-login-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
@@ -294,7 +298,9 @@ var SessionForm = function SessionForm() {
     onChange: handleUsernameChange
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Password:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "password",
-    className: "password"
+    className: "password",
+    value: password,
+    onChange: handlePasswordChange
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "submit-button" // OnClick={handleSubmit}
 
