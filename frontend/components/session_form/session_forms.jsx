@@ -6,14 +6,18 @@ const SessionForm = () => {
     const [password, setPassword] = useState('');
 
 
-    update = (field) => {
-        return e => setUsername({
-            [field]: e.target.value
-        });
-    }
+    // update = (field) => {
+    //     return e => setUsername({
+    //         [field]: e.target.value
+    //     });
+    // }
 
-    handleSubmit = () => {
+    // handleSubmit = () => {
         
+    // }
+
+    const handleUsernameChange = (event) => {
+        setUsername(event.target.value)
     }
 
     return (
@@ -22,7 +26,9 @@ const SessionForm = () => {
                 Username:
                 <input
                 type="text"
-                className="username"/>
+                className="username"
+                value={username}
+                onChange={handleUsernameChange}/>
 
                 <br/>
                 Password:
@@ -34,7 +40,7 @@ const SessionForm = () => {
 
                 <button
                 className="submit-button"
-                OnClick={handleSubmit}
+                // OnClick={handleSubmit}
                 >Log In</button>
             </form>
         </div> 

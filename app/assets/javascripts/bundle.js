@@ -247,8 +247,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -272,15 +270,18 @@ var SessionForm = function SessionForm() {
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
       _useState4 = _slicedToArray(_useState3, 2),
       password = _useState4[0],
-      setPassword = _useState4[1];
+      setPassword = _useState4[1]; // update = (field) => {
+  //     return e => setUsername({
+  //         [field]: e.target.value
+  //     });
+  // }
+  // handleSubmit = () => {
+  // }
 
-  update = function update(field) {
-    return function (e) {
-      return setUsername(_defineProperty({}, field, e.target.value));
-    };
+
+  var handleUsernameChange = function handleUsernameChange(event) {
+    setUsername(event.target.value);
   };
-
-  handleSubmit = function handleSubmit() {};
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "outer-login-container"
@@ -288,13 +289,15 @@ var SessionForm = function SessionForm() {
     className: "login-form "
   }, "Username:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "text",
-    className: "username"
+    className: "username",
+    value: username,
+    onChange: handleUsernameChange
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Password:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "password",
     className: "password"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "submit-button",
-    OnClick: handleSubmit
+    className: "submit-button" // OnClick={handleSubmit}
+
   }, "Log In")));
 };
 
