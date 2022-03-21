@@ -22,7 +22,7 @@ const SessionForm = () => {
 
     return (
         <div className='outer-login-container'>
-            <i class="fa-solid fa-water-ladder"></i>
+            <i className="fa-solid fa-water-ladder"></i>
             <form className="login-form ">
                 Username:
                 <input
@@ -46,6 +46,8 @@ const SessionForm = () => {
                 // OnClick={handleSubmit}
                 >Log In</button>
 
+                &nbsp;
+                
                 <button 
                 className="sign-up-button">
                     Sign Up
