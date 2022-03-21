@@ -4,10 +4,20 @@ import { Link, NavLink } from 'react-router-dom';
 export default () => (
     <div className="home-page-outer-container">
         <div className="home-page-inner-container">
-            {/* <h1>This will be the homepage</h1>
+            <h3>Learn to Swim!</h3>
+            <p>
+                Our mission is to provide high-quality lessons in 
+                a safe and fun aquatic environment, which encourages 
+                swimmers to achieve their full potential in the pool.
 
-            <h3>hello smoll text</h3> */}
+                <br/><br/>
 
+                Go H2O combines quality swim instructors with safe, 
+                structured and exciting lesson plans to keep students
+                motivated in the water. 
+            </p>
+
+            
         </div>
     </div>
 )
