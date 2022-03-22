@@ -357,7 +357,7 @@ var SessionForm = function SessionForm() {
       username: username,
       password: password
     });
-    fetch('http://localhost:3000/api/home', {
+    fetch('http://localhost:3000/api/session', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -389,11 +389,9 @@ var SessionForm = function SessionForm() {
     value: password,
     onChange: handlePasswordChange
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "submit-button" // OnClick={handleSubmit}
-
-  }, "Log In"), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "sign-up-button"
-  }, "Sign Up")));
+    className: "submit-button",
+    onClick: handleSubmit
+  }, "Sign Up"), "\xA0"));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SessionForm);

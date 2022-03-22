@@ -23,7 +23,7 @@ const SessionForm = () => {
             password
         });
 
-        fetch('http://localhost:3000/api/home' ,{
+        fetch('http://localhost:3000/api/session' ,{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -61,15 +61,15 @@ const SessionForm = () => {
 
                 <button
                 className="submit-button"
-                // OnClick={handleSubmit}
-                >Log In</button>
+                onClick={handleSubmit}
+                >Sign Up</button>
 
                 &nbsp;
                 
-                <button 
+                {/* <button 
                 className="sign-up-button">
                     Sign Up
-                </button>
+                </button> */}
             </form>
         </div> 
     )
