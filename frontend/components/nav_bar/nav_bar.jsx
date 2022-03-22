@@ -5,19 +5,20 @@ const NavBar = () => {
 
     return(
         <div className='nav-bar-outer'>
-            <div className="nav-bar-links">
-                <Link to="/">Home</Link>
-                    &nbsp;
-                <Link to="/aboutus">About Us</Link>
-                    &nbsp;
-                <Link to="/lessons">Swim Lesson Types</Link>
-                    &nbsp;
-                <Link to="/prices">Prices</Link>
-                    &nbsp;
-                <Link to="/careers">Careers</Link>
-                    &nbsp;
-                <Link to="/contact">Contact Us</Link>
-            </div>
+            <h3 id="logo">Go H20 Swimming </h3>
+            <nav>
+                <ul className="nav-bar-links">
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/lessons">Swim Lesson Types</Link></li>
+                    <li><Link to="/prices">Prices</Link></li>
+                    <li><Link to="/careers">Careers</Link></li>
+                </ul>
+            </nav>
+            <a>
+                <button 
+                className="button-contact">Contact</button>
+            </a>
         </div>
     )
 
