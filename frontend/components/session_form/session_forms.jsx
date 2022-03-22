@@ -40,7 +40,7 @@ const SessionForm = () => {
 
     return (
         <div className='outer-login-container'>
-            <i className="fa-solid fa-water-ladder"></i>
+            <i className="fa-solid fa-water-ladder" />
             <form className="login-form ">
                 Username:
                 <input

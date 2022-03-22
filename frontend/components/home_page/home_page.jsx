@@ -2,8 +2,8 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 export default () => (
-    <div className="home-page-outer-container">
-        <div className="home-page-inner-container">
+    <div className="welcome-page-outer-container">
+        <div className="welcome-page-inner-container">
             <h3>Learn to Swim!</h3>
             <p>
                 Our mission is to provide high-quality lessons in 
@@ -12,7 +12,7 @@ export default () => (
 
                 <br/><br/>
 
-                Go H2O combines quality swim instructors with safe, 
+                Go H20 combines quality swim instructors with safe, 
                 structured and exciting lesson plans to keep students
                 motivated in the water. 
             </p>

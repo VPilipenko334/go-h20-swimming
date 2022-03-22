@@ -10,15 +10,14 @@ import {
 
 import { ProtectedRoute, AuthRoute } from '../util/route_util';
 import NavBar from './nav_bar/nav_bar';
-import ContactForm from './contact_form/contact_form';
-import SessionForm from './session_form/session_forms';
+// import SessionForm from './session_form/session_forms';
 import Home_page from './home_page/Home_page'
 
 const App = () => (
     <div className="outer-container">
         <div className="inner-container">
             <NavBar/>
-            <SessionForm />
+            {/* <SessionForm /> */}
             <Home_page /> 
         </div>
     </div>
