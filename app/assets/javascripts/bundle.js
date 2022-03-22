@@ -338,6 +338,11 @@ var SessionForm = function SessionForm() {
       password = _useState4[0],
       setPassword = _useState4[1];
 
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+      _useState6 = _slicedToArray(_useState5, 2),
+      success = _useState6[0],
+      setSuccess = _useState6[1];
+
   var handleUsernameChange = function handleUsernameChange(event) {
     setUsername(event.target.value);
   };
@@ -348,7 +353,23 @@ var SessionForm = function SessionForm() {
 
   var handleSubmit = function handleSubmit(event) {
     event.preventDefault();
-    alert("Welcome' + ".concat(username));
+    var body = JSON.stringify({
+      username: username,
+      password: password
+    });
+    fetch('http://localhost:3000/api/home', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: body
+    }).then(function (response) {
+      if (response.status === 200) {
+        setSuccess("Success, Thank you for logging in!");
+      } else {
+        setSuccess("Sorry, this username or password does not exist in our system");
+      }
+    });
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {

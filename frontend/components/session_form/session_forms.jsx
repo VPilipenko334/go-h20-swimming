@@ -4,6 +4,7 @@ const SessionForm = () => {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [success, setSuccess] = useState('');
 
 
     const handleUsernameChange = (event) => {
@@ -16,8 +17,25 @@ const SessionForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert(`Welcome' + ${username}`)
+        
+        const body = JSON.stringify({
+            username,
+            password
+        });
 
+        fetch('http://localhost:3000/api/home' ,{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body
+        }).then((response) => {
+            if (response.status === 200) {
+                setSuccess("Success, Thank you for logging in!")
+            } else {
+                setSuccess("Sorry, this username or password does not exist in our system")
+            }
+        })
     }
 
     return (
