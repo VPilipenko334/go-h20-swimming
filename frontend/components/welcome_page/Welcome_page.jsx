@@ -2,8 +2,8 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 export default () => (
-    <div className="welcome-page-outer-container">
-        <div className="welcome-page-inner-container">
+    <div className="outer-container">
+        <div className="inner-container">
             <h3>Learn to Swim!</h3>
             <p>
                 Our mission is to provide high-quality lessons in 
