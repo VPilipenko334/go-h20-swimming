@@ -16,17 +16,21 @@ import AboutUs from './about_us/about_us';
 import Lessons from './lessons/lessons';
 import Prices from './prices/prices';
 import Careers from './careers/careers';
+import SessionForm from './session_form/session_forms';
 
 const App = () => (
     <div className="outer-container">
         <div className="inner-container">
             <NavBar/>
             <Switch>
+                <Route exact path="/login" component={SessionForm} />
+                <Route exact path="/signup" component={SessionForm} />
                 <Route exact path="/" component={Welcome_page} />
                 <Route exact path="/about" component={AboutUs} />
                 <Route exact path="/lessons" component={Lessons} />
                 <Route exact path="/prices" component={Prices} />
                 <Route exact path="/careers" component={Careers} />
+                <Route exact path="/contact" component={ContactForm} />
             </Switch>
             {/* <SessionForm /> */}
             {/* <Home_page />  */}

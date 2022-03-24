@@ -18,11 +18,13 @@ const NavBar = () => {
             </nav>
             <a>
                 <button 
-                className="button-contact">Contact</button> <br/>
+                    className="button-contact"><Link to="/contact">Contact</Link></button> <br/>
             </a>
-            <span className="login-info">
-                <SessionForm />
-            </span>
+
+            <div className="login-forms">
+                    <Link to="/login">Login</Link> &nbsp;
+                    <Link to="/signup">Sign Up</Link>
+            </div>
         </div>
     )
 
